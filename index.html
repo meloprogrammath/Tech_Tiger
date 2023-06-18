@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tech Tiger</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+      </head>
+      <body>
+        <header>
+          <h1>Tech Tiger</h1>
+          <nav>
+            <ul>
+              <li><a href="#produtos">Produtos</a></li>
+              <li><a href="#cadastro">Cadastro</a></li>
+              <li><a href="#contatos">Contatos</a></li>
+            </ul>
+          </nav>
+        </header>
+
+      <section>
+        <div class="promo">
+          <img src="img/fone.jpg" alt="Produto em promoção">
+          <div class="promo-details">
+            <h2 class="special">Fone Bluetooth por apenas R$100,00</h2>
+            <p class="special">Aproveite essa oferta especial por tempo limitado!</p>
+            <button class="btn">Adicionar</button>
+          </div>
+        </div>
+        <hr>
+      </section>
+      
+        <main>
+          <section id="produtos">
+            <h2>Produtos</h2>
+            <div class="product">
+              <img src="img/celular.jpg" alt="Produto 1">
+              <h3>Celular</h3>
+              <p>R$ 6.000,00</p>
+              <button class="btn">Adicionar</button>
+            </div>
+            <div class="product">
+              <img src="img/computador.jpg" alt="Produto 2">
+              <h3>Notebook</h3>
+              <p>R$ 3.500,00</p>
+              <button class="btn">Adicionar</button>
+            </div>
+            <div class="product">
+                <img src="img/headfone.jpg" alt="Produto 3">
+                <h3>Head Phone</h3>
+                <p>R$ 200,00</p>
+                <button class="btn">Adicionar</button>
+              </div>
+              <div class="product">
+                <img src="img/powerbank.jpg" alt="Produto 4">
+                <h3>Power Bank</h3>
+                <p>R$ 200,00</p>
+                <button class="btn">Adicionar</button>
+              </div>
+              <div class="product">
+                <img src="img/teclado.jpg" alt="Produto 5">
+                <h3>Teclado</h3>
+                <p>R$ 800,00</p>
+                <button class="btn">Adicionar</button>
+              </div>
+
+              <br><br>
+
+              <div class="product">
+                <img src="img/videogame.jpg" alt="Produto 6">
+                <h3>Video Game</h3>
+                <p>R$ 5.000,00</p>
+                <button class="btn">Adicionar</button>
+              </div>
+              <div class="product">
+                <img src="img/tv.jpg" alt="Produto 7">
+                <h3>Televisão</h3>
+                <p>R$ 2.500,00</p>
+                <button class="btn">Adicionar</button>
+              </div>
+              <div class="product">
+                <img src="img/tablet.jpg" alt="Produto 8">
+                <h3>Tablet</h3>
+                <p>R$ 3.500,00</p>
+                <button class="btn">Adicionar</button>
+              </div>
+              <div class="product">
+                <img src="img/psp.jpg" alt="Produto 9">
+                <h3>Video Game Portátil</h3>
+                <p>R$ 1.000,00</p>
+                <button class="btn">Adicionar</button>
+              </div>
+              <div class="product">
+                <img src="img/pc.jpg" alt="Produto 10">
+                <h3>PC</h3>
+                <p>R$ 10.000,00</p>
+                <button class="btn">Adicionar</button>
+              </div>
+          </section>
+
+          <script src="file.js"></script>
+
+          <br>
+      
+          <section id="cadastro" class="cadastro">
+            <h2>Cadastro</h2>
+            <p>Após adicionar os produtos que deseja comprar, informe seus dados para que possamos confirmar a compra</p>
+            <br>
+            <form method="post" class="formulario" action="conecta.php">
+              <ul>
+              <li><label for="nome">Nome: </label>
+              <input class="modify" id="nome" type="text" name="nome" placeholder="Nome completo" required></li>
+              <li><label for="email">Email</label>
+              <input class="modify" id="email" type="email" name="email" placeholder="Email para contato" required></li>
+              <li><label for="telefone">Telefone: </label>
+              <input class="modify" id="telefone" type="tel" name="telefone" pattern="[0-9]{2}-[0-9]{4,5}-[0-9]{4}" placeholder="Telefone para contato" required></li>
+              <li><label for="endereco">Endereço: </label>
+              <input class="modify" id="endereco" type="text" name="endereco" placeholder="Endereço para envio" required></li>
+              <li><label for="numero">Número: </label>
+              <input class="modify" id="numero" type="number" name="numero" placeholder="Número" required></li>
+              <li><label for="complemento">Complemento: </label>
+              <input class="modify" id="complemento" type="text" name="complemento" placeholder="Complemento" required></li>
+              <li><label for="cpf">CPF</label>
+              <input class="modify" id="cpf" type="text" name="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="CPF para segurança" required></li>
+              <li><label for="idade">Idade: </label>
+              <input class="modify" id="idade" type="number" name="idade" placeholder="Idade" required></li>
+              <li><label for="pagamento">Pagamento: </label>
+              <input class="modify" id="pagamento" type="text" name="pagamento" placeholder="Forma de pagamento" required></li>
+              </ul><br><br>
+              
+              <button class="compra" type="submit">Finalizar Compra</button>
+          </form><br>
+          </section>
+
+          <br>
+
+          <section id="contatos" class="contatos">
+            <h2>Contatos</h2>
+            <p>Para faciltar a comunicação entre nossos consumidores e nossa empresa, temos a disposição nossos telefones de uso público para tirar qualquer dúvida ou solicitação desejada.</p><br>
+            <li>O telefone para suporte pode ser acessado 24 horas, ligue quando quiser: <a href="+55 11111-1111"><span>Link Suporte</span></a></li>
+            <li>O telefone para reclamação é de uso matutino, ligue entre as 09:00 as 18:00: <a href="+55 22222-2222"><span>Link Reclamação</span></a></li>
+            <li>O telefone para reclamação é de uso matutino, ligue entre as 09:00 as 18:00: <a href="+55 33333-3333"><span>Link Dúvidas</span></a></li>
+          </section>
+
+        </main>
+      
+        <footer>
+          <p>@ 2023 Tech Tiger. Todos os direitos reservados.</p>
+        </footer>
+      </body>
+</html>

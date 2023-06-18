@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.4;
+    color: #333;
+}
+  
+h1, h2, h3 {
+    margin-bottom: 0.5em;
+}
+  
+a {
+    text-decoration: none;
+    color: #333;
+}
+  
+header {
+    background-color: rgb(110, 110, 207);
+    padding: 20px;
+}
+  
+nav ul {
+    list-style: none;
+}
+  
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+  
+main {
+    padding: 20px;
+}
+
+.promo {
+    display: flex;
+    align-items: center;
+    background-color: rgb(231, 99, 51);
+    padding: 20px;
+}
+  
+.promo img {
+    width: 200px;
+    height: auto;
+    margin-right: 20px;
+}
+  
+.promo-details {
+    flex-grow: 1;
+}
+  
+.promo h2 {
+    font-size: 24px;
+}
+  
+.promo p {
+    margin-bottom: 10px;
+}
+  
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.btn.clicked {
+    background-color: rgb(60, 212, 60);
+}
+
+.special {
+    color: yellow;
+}
+  
+section {
+    margin-bottom: 30px;
+}
+  
+.product {
+    display: inline-block;
+    margin-right: 58px;
+    text-align: center;
+    align-items: space-between;
+}
+  
+.product img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.formulario {
+    font-weight: bold;
+    text-align: center;
+}
+
+.compra {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 3px;
+}
+
+.cadastro {
+    background-color: rgb(110, 110, 207);
+    padding: 20px;
+    margin: -20px;
+}
+
+.contatos {
+    background-color: rgb(231, 99, 51);
+    padding: 20px;
+    margin: -20px;
+}
+
+span {
+    color: yellow;
+}
+
+li {
+    list-style-type: none;
+    margin: 5px;
+}
+
+footer {
+    background-color: rgb(110, 110, 207);
+    color: #333;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+@media (max-width: 750px) {
+    body {
+      font-size: 14px;
+    }
+    
+    header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .promo {
+      flex-direction: column;
+    }
+    
+    .promo-details {
+      text-align: center;
+    }
+    
+    main {
+      padding: 10px;
+    }
+    
+    .product {
+      width: 100%;
+      padding: 10px;
+    }
+  }
